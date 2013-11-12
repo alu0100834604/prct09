@@ -1,4 +1,4 @@
-require "Fraccion.rb"
+require "Practica9/Fraccion.rb"
  
 class Matriz
    attr_reader :filas,:columnas, :valor, :matriz, :m1, :m2
