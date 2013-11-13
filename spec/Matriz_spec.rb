@@ -37,7 +37,7 @@ end
 describe "Multiplicacion de fracciones" do
 	it "Se debe multiplicar fracciones correctamente" do
 	@resultado = @matriz4 * @matriz5
-      	@resultado.should == Matriz.new([[ Fraccion.new(1,1) , Fraccion.new(2,3)],[Fraccion.new(1,1), Fraccion.new(2,5)]])
+      	@resultado.should == Matriz.new([[ Fraccion.new(5,12) , Fraccion.new(7,30)],[Fraccion.new(7,20), Fraccion.new(31,150)]])
 	end
 
 end

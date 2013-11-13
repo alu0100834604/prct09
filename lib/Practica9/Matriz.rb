@@ -50,18 +50,16 @@ def *(m2)
         resultado = Array.new(filas_final){Array.new(columnas_final, 0)}
         for i in 0...@filas
                 for j in 0...m2.columnas
-                        temp = Array.new(dimensiones[0][0],0)
+                        temp = Array.new(dimensiones[0][0])
 			temp[0] = @matriz[i][0] * val2 = m2[0][j];
-
                         for k in 1...@columnas
                                 val1 = @matriz[i][k]
                                 val2 = m2[k][j]
 				temp2 =  val1 * val2
-				puts(val1)
-				puts(val2)
 				puts temp2
                                 #temp[k] += temp2
-                                temp[k] = temp[k] +  temp2
+				puts(temp[k].class)
+                                temp[k] = temp2
                         end
                         resultado[i][j] = temp.reduce(:+)
                 end
